@@ -1,0 +1,9 @@
+Package: com.34306.realactionbutton
+Name: RealActionButton
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Multi-click actions for the Action Button (single and double click)
+Maintainer: Little 34306
+Author: 34306
+Section: Tweaks
+Depends: firmware (>= 17.0), preferenceloader

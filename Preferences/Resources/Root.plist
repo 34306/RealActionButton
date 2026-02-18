@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Click Actions</string>
+			<key>footerText</key>
+			<string>Configure what each click type does. Long press is unchanged.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ABMCActionListController</string>
+			<key>key</key>
+			<string>singleClickAction</string>
+			<key>label</key>
+			<string>Single Click</string>
+			<key>default</key>
+			<string>default</string>
+			<key>defaults</key>
+			<string>com.huynguyen.actionbuttonmulticlick</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ABMCActionListController</string>
+			<key>key</key>
+			<string>doubleClickAction</string>
+			<key>label</key>
+			<string>Double Click</string>
+			<key>default</key>
+			<string>none</string>
+			<key>defaults</key>
+			<string>com.huynguyen.actionbuttonmulticlick</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Timing</string>
+			<key>footerText</key>
+			<string>How long to wait for additional clicks. Lower values feel faster but make multi-clicks harder.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>clickTimeout</string>
+			<key>default</key>
+			<real>1.5</real>
+			<key>min</key>
+			<real>0.5</real>
+			<key>max</key>
+			<real>2.0</real>
+			<key>defaults</key>
+			<string>com.huynguyen.actionbuttonmulticlick</string>
+			<key>PostNotification</key>
+			<string>com.huynguyen.actionbuttonmulticlick/prefsChanged</string>
+			<key>showValue</key>
+			<true/>
+			<key>label</key>
+			<string>Click Timeout</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>RealActionButton</string>
+</dict>
+</plist>
